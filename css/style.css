@@ -33,9 +33,8 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
   align-items: baseline;
-  padding-top: 1rem;
+  padding-bottom: .5rem;
 }
 
 h1 {
@@ -103,6 +102,9 @@ span.wrong {
 @media (min-width: 768px) {
   header {
     flex-direction: row;
+      gap: 1.5rem;
+      align-items: baseline;
+      padding-top: 1rem;
   }
 }
 
@@ -128,6 +130,53 @@ span.wrong {
   line-height: 4rem;
   text-transform: uppercase;
   text-align: center;
+}
+
+.keyboard {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.25rem;
+margin-bottom: 0.5rem;
+}
+
+.row-keyboard {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+.keyboard .tile {
+  width: 2rem;
+  height: 3rem;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 2px solid rgb(122, 118, 118);
+    border-radius: 6px;
+    background-color: rgb(208, 208, 221);
+    line-height: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 1px 1px 0px #000;
+    cursor: pointer;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard .double {
+  width: 3.75rem;
+  background: #bbbbbb;
+}
+
+.keyboard  .enter {
+  font-size: 0.75rem;
+}
+
+.keyboard  .delete {
+  font-size: 1.3rem;
 }
 
 .is-filled {
@@ -194,30 +243,27 @@ span.wrong {
   }
 }
 
-.keyboard {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  margin-bottom: 1.5rem;
-  gap: 0.185rem;
-}
-
-.keyboard .tile {
-  font-size: 1rem;
-  width: 1.75rem;
-  height: 1.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* responsive */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 386px) {
+
+  .row-keyboard {
+    gap: 0.1rem;
+  }
+
   .keyboard .tile {
     font-size: 1rem;
-    width: 1.45rem;
-    height: 1.45rem;
+    width: 1.95rem;
+    height: 2.3rem;
     line-height: 1.45rem;
+  }
+
+  .keyboard .double {
+    width: 2.75rem;
+  }
+
+  .keyboard .enter {
+    font-size: 0.55rem;
   }
 }
 

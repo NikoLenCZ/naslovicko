@@ -152,3 +152,22 @@ closeDialog.addEventListener("click", function () {
     myDialog.close();
   }, 500);
 });
+
+
+//  mobile keyboard
+const keyboard = document.querySelector(".keyboard");
+keyboard.addEventListener("click", (event) => {
+
+if (event.target.nodeName !== "BUTTON") return
+let character = event.target.id
+
+if (character === "enter") {
+  submitWord();
+}
+else if (character === "backspace") {
+  removeLetter();
+}
+else {
+  addLetter(character);
+}
+});
