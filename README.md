@@ -51,6 +51,7 @@ výsledná stránka: https://nikolencz.github.io/naslovicko
 
 ## 🧭 Do budoucna
 
-- [ ] podbarvení písmen také na klávesnici pod deskou
+- [x] mobilní klávesnice pod deskou
+- [ ] podbarvení písmen také na klávesnici
 - [ ] light/dark mode
 - [ ] kontrastní režim v rámci přístupnosti
