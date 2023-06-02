@@ -15,7 +15,6 @@ Klon hry Wordle, vytvořené pro studijní účely v rámci [kurzu programován�
 ## 🎲 Jak hrát:
 
 - uhádni slovo. Máš 6 pokusů.
-- piš rovnou z klávesnice - mobilní klávesnice pod hrací deskou zatím není připravena.
 - odeslání slova přes klávesu Enter.
 - zadej první pokus a písmena se vybarví:
   - ŠEDÁ ⬜️ znamená, že písmeno ve slově není.
@@ -37,7 +36,14 @@ Klon hry Wordle, vytvořené pro studijní účely v rámci [kurzu programován�
 
 ---
 
-## 👀 Finální výsledek:
+## 👀  Náhled aplikace:
+
+
+![2023-06-02_192611](https://github.com/NikoLenCZ/naslovicko/assets/55710950/e96bf13c-2ea3-42e6-bc55-84827954548c)
+
+---
+
+## 🌐 Finální výsledek:
 
 výsledná stránka: https://nikolencz.github.io/naslovicko
 
@@ -45,6 +51,6 @@ výsledná stránka: https://nikolencz.github.io/naslovicko
 
 ## 🧭 Do budoucna
 
-- [ ] mobilní klávesnice pod deskou hry
+- [ ] podbarvení písmen také na klávesnici pod deskou
 - [ ] light/dark mode
 - [ ] kontrastní režim v rámci přístupnosti
